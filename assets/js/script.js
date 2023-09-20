@@ -60,3 +60,33 @@ myFunction();
 // let newFullName = fullName.toLowerCase();
 
 // console.log(newFullName.slice(0,4) + "." + newFullName.slice(5,13) + "@" + domain + "." + tld );
+
+console.log(Number("123"));
+console.log(Number(null));
+console.log(Number(true));
+console.log(Number("hello"));
+console.log(isNaN("hi"));
+console.log(isFinite(1.8e308));
+console.log(Number.isInteger(123));
+console.log(parseFloat("345.9"));
+console.log(parseInt(98.98));
+console.log(345.5.toFixed(2));
+console.log(typeof(345.5.toString()));
+
+let y;
+console.log(y);
+
+console.log(isNaN("56"));
+
+let passport = true;
+let ticket = true;
+let weapons = false;
+let a = 10;
+let b = 5;
+
+let either = a > 10 || b <= 5;
+console.log(either);
+
+let getOnFlight = passport && ticket && !weapons;
+console.log(getOnFlight);
+
