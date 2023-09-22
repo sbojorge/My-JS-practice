@@ -201,3 +201,18 @@ function findPrice(memberStatus) {
         challengeResult = "Error message unknown";
   }
   console.log(challengeResult);
+
+  let user = true;
+  let emailVerified = false;
+
+  if (user) {
+    if (emailVerified) {
+      console.log("Welcome to our web-site");
+      console.log(emailVerified);
+    } else {
+      console.log("Please verify your email");
+    }
+  } else {
+    console.log("You need to be a user to visit this page");
+  }
+
