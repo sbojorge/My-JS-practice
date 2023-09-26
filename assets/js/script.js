@@ -216,53 +216,129 @@ myFunction();
 //     console.log("You need to be a user to visit this page");
 //   }
 
-let fruits = ["apples", "kiwis", "bananas", "cherries"];
-let numberOfFruits = fruits.length;
+// let fruits = ["apples", "kiwis", "bananas", "cherries"];
+// let numberOfFruits = fruits.length;
 
-let i = 0;
-while (i < numberOfFruits) {
-  console.log(fruits[i] +  " are delicious");
-  i++;
+// let i = 0;
+// while (i < numberOfFruits) {
+//   console.log(fruits[i] +  " are delicious");
+//   i++;
+// }
+
+// console.log("I love fruits!");
+
+// let x = 0;
+// while (x <= 10) {
+//   console.log(x);
+//   x++;
+// }
+
+// let attemptedUploads = 0;
+
+// do {
+//   console.log("Attempting upload...");
+//   attemptedUploads++;
+// } while (attemptedUploads < 5);
+
+// console.log("Upload attempts exceeded maximum");
+
+// let y = 0;
+// while (y < 1000) {
+//   if (y === 3) {
+//     console.log("breaking");
+//     break;
+//   }
+//   console.log(y);
+//   y++;
+// }
+// console.log("loop has been broken");
+
+// for (let z = 0; z <=6; z++) {
+//   if (z % 2 !== 0){
+//     continue;
+//   }
+//   console.log(z);
+// }
+// console.log("Loop complete");
+
+// for(let a = 0; a <=3; a++) {
+//   for(let b = 200; b <= 203; b++){
+//     console.log("outer loop a:", a, "inner loop b:", b);
+//   }
+// }
+
+let cars = ["saab", "volvo", "ford"];
+for (let car = 0; car < 3; car++) {
+  console.log(cars[car]);
 }
 
-console.log("I love fruits!");
+// let lotOfElements = ["a", "b", "c", "d", "e", "f", "g"];
+// for(let i = 0; i < lotOfElements.length; i++) {
+//   console.log(lotOfElements[i]);
+// }
 
-let x = 0;
-while (x <= 10) {
-  console.log(x);
-  x++;
-}
+let clothes = ["shirt", "shoes", "socks", "hat", "vest", "shorts", "skirt", "scarf"];
 
-let attemptedUploads = 0;
+let varOne = clothes[0];
+console.log(varOne);
 
-do {
-  console.log("Attempting upload...");
-  attemptedUploads++;
-} while (attemptedUploads < 5);
+let varTwo = clothes[5];
+console.log(varTwo);
 
-console.log("Upload attempts exceeded maximum");
+let varThree = clothes[4];
+console.log(varThree);
 
-let y = 0;
-while (y < 1000) {
-  if (y === 3) {
-    console.log("breaking");
-    break;
-  }
-  console.log(y);
-  y++;
-}
-console.log("loop has been broken");
+let fruits = ["apples", "pears", "cherries", "bananas", "peaches", "oranges"];
+let lastItem = fruits.pop();
+console.log(lastItem);
+console.log(fruits);
 
-for (let z = 0; z <=6; z++) {
-  if (z % 2 !== 0){
-    continue;
-  }
-  console.log(z);
-}
-console.log("Loop complete");
+let firsItem = fruits.shift();
+console.log(firsItem);
+console.log(fruits);
 
-for(let a = 0; a <=3; a++) {
-  for(let b = 200; b <= 203; b++){
-    console.log("outer loop a:", a, "inner loop b:", b);
-  }
-}
+let newLength = fruits.unshift("lemons");
+console.log(newLength);
+console.log(fruits);
+
+delete fruits[2];
+console.log(fruits);
+
+fruits.splice(2,1);
+console.log(fruits);
+
+fruits.splice(2,0,"grapes", "kiwis", "pineapple");
+console.log(fruits);
+
+fruits[0] = "blueberries";
+console.log(fruits);
+
+let subset = fruits.slice(2,4);
+console.log(subset);
+
+fruits.sort();
+console.log(fruits);
+
+let veggies = ["carrots", "peas", "lettuce"];
+let greenies = fruits.concat(veggies);
+greenies.sort();
+console.log(greenies);
+
+let hasVeggie = greenies.includes("brocoli");
+console.log(hasVeggie);
+
+let crew = ["Jean-Luc", "Wesley", "Warf", "William", "Data", "Tasha"];
+console.log(crew);
+
+let lastCrewMember = crew.pop();
+console.log(lastCrewMember);
+console.log(crew);
+crew.sort();
+console.log(crew);
+
+let newCrew = crew.slice(1,4);
+console.log(newCrew);
+newCrew.push("Guinan");
+console.log(newCrew);
+
+
