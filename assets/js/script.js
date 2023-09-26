@@ -341,4 +341,8 @@ console.log(newCrew);
 newCrew.push("Guinan");
 console.log(newCrew);
 
+let words = ["I", "would", "like", "some", "water"];
+
+
+
 
