@@ -10,3 +10,14 @@ console.log(fourthHeading.innerHTML);
 
 let special = document.getElementById("special");
 console.log(special.innerHTML);
+
+// runnable example
+
+let practice = document.getElementById("unique");
+
+let firstChild = practice.children[0];
+console.log(firstChild.innerHTML);
+console.log(practice.parentNode);
+let secondChild = firstChild.nextElementSibling;
+console.log(secondChild);
+console.log(secondChild.previousElementSibling);
