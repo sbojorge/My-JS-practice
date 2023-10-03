@@ -3,7 +3,7 @@ document.getElementById("greeting").style.color = "blue";
 document.getElementById("text").style.display = "block";
 
 function myFunction() {
-  document.getElementById("picture").src = "assets/images/160429.webp";
+  document.write("this is my test");
 }
 
 myFunction();
