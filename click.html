@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Click event</title>
+    <link rel="stylesheet" href="assets/css/click.css">
+  </head>
+  <body>
+    <div id="lowly-div" onclick="alert('You clicked the lowly div!');">
+      <p>Though I am but a lowly div, you can still click me</p>
+    </div>
+
+    <p onclick="alert('You clicked the paragraph');">
+      Paragraphs have click events also...everything does! Click me!
+    </p>
+
+    <p>The button below calls the changeBox() function in script.js:</p>
+    <button type="button" onclick="changeBox();">Change the Lowly Div!</button>
+    <!--the challenge-->
+    <div class="card" onclick="alert('You clicked Div 1');">Div 1</div>
+    <div class="card" onclick="alert('You clicked Div 2');">Div 2</div>
+    
+    <p onclick="changeCards()">Click me to change the divs to red</p>
+    <script src="assets/js/click.js"></script>
+  </body>
+</html>
