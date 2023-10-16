@@ -1,4 +1,7 @@
-const handleBtnClick = event => {
+function handleBtnClick(event) {
+    /*using an arrow function here creates a closure over the "this" value that leads to a TypeError.
+  See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/this
+  */
     console.log(`Received the ${event.type} event!`);
     console.log(`"this" currently refers to ${this.id}`);
     console.log("You clicked the button!\n");
