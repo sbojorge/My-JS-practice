@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Prepopulating form fields</title>
+    <link rel="stylesheet" href="assets/css/prepopulating-form-fields.css">
+  </head>
+  <body>
+    <p>The form below is prepopulated by the code in <code>script.js</code>:</p>
+    <form method="POST">
+      <div class="username">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" />
+      </div>
+      <div class="email">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" />
+      </div>
+      <div class="message">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea>
+      </div>
+      <input type="submit" value="Submit" />
+    </form>
+    <script src="assets/js/prepopulating-form-fields.js"></script>
+  </body>
+</html>
