@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Validation form data</title>
+    <link rel="stylesheet" href="assets/css/validation-form-data.css" />
+  </head>
+  <body>
+    <form
+      id="registration-form"
+      action="https://formdump.codeinstitute.net"
+      method="POST"
+    >
+      <div class="username">
+        <label for="username">Username</label>
+        <input name="username" id="username" type="text" required />
+      </div>
+      <div class="email">
+        <label for="email">Email</label>
+        <input name="email" id="email" type="email" required />
+      </div>
+      <div class="password">
+        <label for="password">Password</label>
+        <input name="password" id="password" type="password" required />
+      </div>
+      <div class="confirm-password">
+        <label for="confirm-password">Confirm Password</label>
+        <input
+          name="confirm-password"
+          id="confirm-password"
+          type="password"
+          required
+        />
+      </div>
+      <div class="age">
+        <label for="age">Age</label>
+        <input name="age" id="age" type="number" min="18" max="110" required />
+      </div>
+      <div class="phone">
+        <label for="phone">Phone (numbers only)</label>
+        <input name="phone" id="phone" type="text" pattern="[0-9]+" required />
+      </div>
+      <div class="join-newsletter">
+        <label for="join-newsletter">Join Newsletter</label>
+        <input
+          name="join-newsletter"
+          id="join-newsletter"
+          type="checkbox"
+          checked
+        />
+      </div>
+      <div id="errors"></div>
+      <div class="submit">
+        <input type="submit" value="Register" />
+      </div>
+    </form>
+    <!--the challenge-->
+    <h3>Register your account:</h3>
+    <p id="errors1"></p>
+    <form
+      id="registration-form1"
+      method="POST"
+      action=""
+    >
+      <div class="username">
+        <label for="username1">Username:</label>
+        <input id="username1" name="username" type="text" required />
+      </div>
+      <div class="password">
+        <label for="password1">Password:</label>
+        <input id="password1" name="password" type="password" required />
+      </div>
+      <input type="submit" />
+    </form>
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.js"
+      integrity="sha256-DrT5NfxfbHvMHux31Lkhxg42LY6of8TaYyK50jnxRnM="
+      crossorigin="anonymous"
+    ></script>
+    
+    <script src="assets/js/validation-form-data.js"></script>
+  </body>
+</html>
